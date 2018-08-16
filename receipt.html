@@ -1,0 +1,104 @@
+<!-- Written By Royce Duncan, 4/10/2018 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Project 3 - Receipt</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="src/main.js"> </script>
+	</head>
+	
+	<body>
+		<h1>Project 3</h1>
+		<h3>Cupcakes R Us - Receipt</h3>
+		
+		<table id="outputOrderTable">
+			<tr>
+				<td>
+					Type
+				</td>
+				<td>
+					Size
+				</td>
+				<td>
+					Flavor
+				</td>
+				<td>
+					Quantity
+				</td>
+			</tr>
+		</table>
+		
+		<script type="text/javascript">OutputTableData();</script>
+		
+		<br>
+		
+		<table>
+			<tr>
+				<td>
+					Name:
+				</td>
+				<td>
+					<script type="text/javascript">document.write(ProperCase(localStorage.getItem('name')));</script>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					State:
+				</td>
+				<td>
+					<script type="text/javascript">document.write(localStorage.getItem('state'));</script>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Weight:
+				</td>
+				<td>
+					<script type="text/javascript">document.write(localStorage.getItem('weight'));</script> lbs
+				</td>
+			</tr>
+			<tr>
+				<td>
+					SubTotal:
+				</td>
+				<td>
+					$<script type="text/javascript">document.write(localStorage.getItem('subTotal'));</script>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Discount:
+				</td>
+				<td>
+					$<script type="text/javascript">document.write(localStorage.getItem('discount'));</script>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Tax:
+				</td>
+				<td>
+					$<script type="text/javascript">document.write(localStorage.getItem('tax'));</script>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Shipping:
+				</td>
+				<td>
+					$<script type="text/javascript">document.write(localStorage.getItem('shipping'));</script>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					GrandTotal:
+				</td>
+				<td>
+					$<script type="text/javascript">document.write(localStorage.getItem('grandTotal'));</script>
+				</td>
+			</tr>
+		</table>
+
+	</body>
+</html>

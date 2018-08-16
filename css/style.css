@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0 1em;
+}
+
+label {
+    color: red;
+}
+
+h1 {
+	color: blue;
+}
+
+td, th {
+	padding: 3px;
+	border-bottom: 1px solid #ddd;
+}
+
+table {
+    border-collapse: collapse;
+	border-color: black;
+
+}
+
+table.clear_format td {
+	border: none;
+}
+
+table.add_border {
+	display: inline-block;
+}
+
+table.add_border td {
+	border: 1px solid #ddd;
+}
