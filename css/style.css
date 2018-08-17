@@ -29,6 +29,11 @@ table.clear_format td {
 
 table.add_border {
 	display: inline-block;
+	border-bottom: 3px solid #ddd;
+}
+
+table.add_border th {
+	border-bottom: 3px solid #ddd;
 }
 
 table.add_border td {
